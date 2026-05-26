@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
-  <meta name="description" content="AMIT GROWTH AGENCY - Professional Facebook Ads, WhatsApp API, E-commerce & Local Business Ads. Scale your brand with Meta experts.">
+  <meta name="description" content="AMIT GROWTH AGENCY - Professional Facebook Ads, WhatsApp API, E-commerce Ads, Local Business Ads. Scale your brand with Meta experts.">
   <title>AMIT GROWTH AGENCY | Facebook Ads + WhatsApp API Experts</title>
   <!-- Google Fonts + Font Awesome 6 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,7 @@
       margin: 0 auto;
       padding: 0 24px;
     }
-    /* Header - fully responsive */
+    /* Header */
     header {
       background: rgba(255,255,255,0.98);
       backdrop-filter: blur(10px);
@@ -48,7 +48,7 @@
       gap: 1rem;
     }
     .logo {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 800;
       background: linear-gradient(135deg, #0f2b3d, #1877f2);
       -webkit-background-clip: text;
@@ -56,7 +56,7 @@
       color: transparent;
     }
     .logo span { color: #1877f2; background: none; }
-    .logo-small { font-size: 0.9rem; display: block; color: #475569; font-weight: 500; }
+    .tagline { font-size: 0.7rem; display: block; color: #475569; font-weight: 500; letter-spacing: 0.5px; }
     .nav-links {
       display: flex;
       gap: 1.5rem;
@@ -75,7 +75,7 @@
     .btn-outline {
       border: 1.5px solid #1877f2;
       background: transparent;
-      padding: 6px 18px;
+      padding: 8px 20px;
       border-radius: 40px;
       font-weight: 600;
       color: #1877f2;
@@ -88,7 +88,7 @@
       background: #1877f2;
       color: white;
       border: none;
-      padding: 12px 24px;
+      padding: 12px 28px;
       border-radius: 40px;
       font-weight: 600;
       cursor: pointer;
@@ -109,7 +109,7 @@
       cursor: pointer;
       transition: 0.2s;
     }
-    /* Hero - responsive */
+    /* Hero */
     .hero {
       padding: 4rem 0 3rem;
       background: linear-gradient(135deg, #f8fcff 0%, #eef3fc 100%);
@@ -132,7 +132,7 @@
       font-size: 0.8rem;
     }
     .hero-content h1 {
-      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 800;
       line-height: 1.2;
       letter-spacing: -0.02em;
@@ -150,16 +150,15 @@
       margin-top: 1.5rem;
       flex-wrap: wrap;
     }
-    .stat-item h3 { font-size: 1.5rem; font-weight: 800; color: #1877f2; }
+    .stat-item h3 { font-size: 1.6rem; font-weight: 800; color: #1877f2; }
     .hero-image {
       flex: 1;
+      background: url('https://i.ibb.co/kVG0JsnH/IMG-20260406-WA0027.jpg') no-repeat center/cover;
       border-radius: 32px;
       min-height: 320px;
-      background-size: cover;
-      background-position: center;
-      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.15);
+      box-shadow: 0 25px 40px -12px rgba(0,0,0,0.2);
     }
-    /* Sections */
+    /* Services */
     .section { padding: 4rem 0; }
     .section-title {
       text-align: center;
@@ -177,22 +176,23 @@
     .cards-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5rem;
+      gap: 1.8rem;
       justify-content: center;
     }
     .service-card {
       background: white;
       border-radius: 28px;
-      padding: 1.8rem;
-      flex: 1 1 240px;
-      box-shadow: 0 12px 25px rgba(0,0,0,0.04);
+      padding: 2rem 1.5rem;
+      flex: 1 1 250px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.05);
       border: 1px solid #eef2ff;
-      transition: 0.25s;
+      transition: 0.3s;
       text-align: center;
     }
-    .service-card i { font-size: 2.3rem; color: #1877f2; margin-bottom: 1rem; }
-    .service-card h3 { font-size: 1.3rem; margin-bottom: 0.6rem; }
-    .service-card:hover { transform: translateY(-6px); border-color: #1877f2; }
+    .service-card i { font-size: 2.5rem; color: #1877f2; margin-bottom: 1rem; }
+    .service-card h3 { font-size: 1.4rem; margin-bottom: 0.6rem; font-weight: 700; }
+    .service-card p { color: #475569; font-size: 0.9rem; }
+    .service-card:hover { transform: translateY(-8px); border-color: #1877f2; box-shadow: 0 20px 35px rgba(24,119,242,0.1); }
     /* Reviews */
     .reviews { background: #f8fafc; }
     .review-slide {
@@ -219,16 +219,17 @@
     .swiper-button-next, .swiper-button-prev {
       color: #1877f2;
       background: white;
-      width: 35px;
-      height: 35px;
+      width: 38px;
+      height: 38px;
       border-radius: 50%;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-    /* Special cards */
+    .swiper-button-next:after, .swiper-button-prev:after { font-size: 1.2rem; }
+    /* Special Cards */
     .special-services {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5rem;
+      gap: 1.8rem;
       justify-content: center;
       margin: 1rem 0 2rem;
     }
@@ -239,66 +240,84 @@
       flex: 1 1 280px;
       border: 1px solid #e6edf4;
       text-align: center;
+      transition: 0.2s;
     }
+    .special-card:hover { transform: translateY(-4px); border-color: #1877f2; }
     .badge-api {
       background: #25D36620;
       color: #075E54;
       padding: 4px 12px;
       border-radius: 40px;
-      font-size: 0.75rem;
+      font-size: 0.7rem;
+      font-weight: 600;
       display: inline-block;
       margin-bottom: 0.8rem;
     }
-    /* Contact Strip */
+    /* Contact Strip - WhatsApp direct */
     .contact-strip {
       background: #0a1929;
-      padding: 2rem 0;
+      padding: 2.5rem 0;
       text-align: center;
     }
     .contact-strip h3 {
       color: white;
-      font-size: 1.4rem;
-      margin-bottom: 1rem;
-      padding: 0 1rem;
+      font-size: 1.5rem;
+      margin-bottom: 1.2rem;
     }
     .messenger-buttons {
       display: flex;
-      gap: 1rem;
+      gap: 1.5rem;
       justify-content: center;
       flex-wrap: wrap;
     }
-    .btn-wa, .btn-tg {
-      padding: 10px 24px;
+    .btn-wa {
+      background: #25D366;
+      color: white;
+      padding: 14px 32px;
       border-radius: 60px;
       font-weight: 700;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       text-decoration: none;
       transition: 0.2s;
-      font-size: 0.9rem;
+      font-size: 1rem;
+      box-shadow: 0 4px 14px rgba(37,211,102,0.3);
     }
-    .btn-wa { background: #25D366; color: white; }
-    .btn-tg { background: #0088cc; color: white; }
+    .btn-tg {
+      background: #0088cc;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 60px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      transition: 0.2s;
+      font-size: 1rem;
+    }
+    .btn-wa:hover, .btn-tg:hover { transform: scale(1.02); filter: brightness(1.05); }
     /* Form */
     .form-wrapper {
       max-width: 900px;
       margin: 0 auto;
       background: white;
       border-radius: 40px;
-      padding: 1.8rem;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      padding: 2rem;
+      box-shadow: 0 25px 45px rgba(0,0,0,0.08);
       border: 1px solid #eef2ff;
     }
-    .form-group { margin-bottom: 1.2rem; }
+    .form-group { margin-bottom: 1.3rem; }
     label { font-weight: 600; display: block; margin-bottom: 6px; font-size: 0.9rem; }
     input, select, textarea {
       width: 100%;
-      padding: 12px 16px;
+      padding: 12px 18px;
       border: 1.5px solid #e2e8f0;
       border-radius: 30px;
       font-family: inherit;
       font-size: 0.95rem;
+      transition: 0.2s;
     }
     input:focus, select:focus, textarea:focus {
       outline: none;
@@ -316,11 +335,12 @@
       align-items: center;
       gap: 8px;
       background: #f8fafc;
-      padding: 6px 14px;
+      padding: 8px 16px;
       border-radius: 40px;
       border: 1px solid #e2e8f0;
       cursor: pointer;
       font-size: 0.85rem;
+      font-weight: 500;
     }
     .service-check input { width: auto; margin: 0; transform: scale(1.05); accent-color: #1877f2; }
     .step-2, .step-3 { display: none; }
@@ -330,29 +350,32 @@
       bottom: 20px;
       right: 20px;
       left: 20px;
-      max-width: 350px;
+      max-width: 380px;
       margin: 0 auto;
       background: #0f172a;
       color: white;
-      padding: 12px 20px;
+      padding: 12px 24px;
       border-radius: 60px;
       z-index: 999;
       text-align: center;
       font-size: 0.85rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
-    .footer { background: #0f172a; color: #cbd5e1; padding: 2rem 0; text-align: center; font-size: 0.8rem; }
-    @media (min-width: 1024px) {
-      .container { padding: 0 40px; }
-      .form-wrapper { padding: 2.5rem; }
-      .hero-image { min-height: 380px; }
+    .footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.8rem;
     }
     @media (max-width: 768px) {
       .navbar { flex-direction: column; text-align: center; }
-      .nav-links { justify-content: center; gap: 1.2rem; }
-      .hero { padding: 2.5rem 0; }
+      .nav-links { justify-content: center; }
+      .hero { padding: 2rem 0; }
       .section { padding: 2.5rem 0; }
       .service-card { padding: 1.5rem; }
-      .btn-primary, .btn-secondary { padding: 10px 20px; font-size: 0.9rem; }
+      .btn-primary, .btn-secondary { padding: 10px 20px; font-size: 0.85rem; }
+      .btn-wa, .btn-tg { padding: 10px 22px; font-size: 0.85rem; }
     }
   </style>
 </head>
@@ -378,52 +401,52 @@
     <div class="container hero-grid">
       <div class="hero-content">
         <div class="hero-badge"><i class="fab fa-facebook"></i> Premier Meta Partner</div>
-        <h1>Facebook Ads + <span style="color:#1877f2;">WhatsApp API</span> That Converts</h1>
-        <p>E-commerce · Local Business · Lead Gen · CAPI & WhatsApp Business API integration for explosive ROI. We scale brands with data-driven strategies.</p>
+        <h1>Scale Your Business With <span style="color:#1877f2;">Facebook Ads</span> & <span style="color:#25D366;">WhatsApp API</span></h1>
+        <p>E-commerce · Local Business · Lead Generation · CAPI Tracking. We turn ad spend into profit.</p>
         <button class="btn-primary" id="hero-cta-btn"><i class="fab fa-meta"></i> Free Performance Audit</button>
         <div class="hero-stats">
           <div class="stat-item"><h3>5.2x</h3><p>Avg ROAS</p></div>
           <div class="stat-item"><h3>450+</h3><p>Happy Brands</p></div>
-          <div class="stat-item"><h3>24/7</h3><p>WhatsApp Support</p></div>
+          <div class="stat-item"><h3>24/7</h3><p>Expert Support</p></div>
         </div>
       </div>
-      <div class="hero-image" style="background-image: url('https://i.ibb.co/kVG0JsnH/IMG-20260406-WA0027.jpg'); background-size: cover; background-position: center;"></div>
+      <div class="hero-image"></div>
     </div>
   </section>
 
-  <!-- Services Section -->
+  <!-- Services Section - Updated with required services -->
   <section class="section" id="services">
     <div class="container">
-      <h2 class="section-title">What We Deliver 🚀</h2>
-      <div class="section-sub">Specialized solutions for every business model — powered by Meta & WhatsApp ecosystem.</div>
+      <h2 class="section-title">Our Premium Services 🚀</h2>
+      <div class="section-sub">Specialized solutions to help you dominate your market</div>
       <div class="cards-grid">
-        <div class="service-card"><i class="fab fa-facebook"></i><h3>Facebook Ads</h3><p>Full-funnel campaigns, audience targeting & CAPI tracking.</p></div>
-        <div class="service-card"><i class="fab fa-whatsapp"></i><h3>WhatsApp API</h3><p>Official WhatsApp Business API integration, click-to-chat ads & automation.</p></div>
-        <div class="service-card"><i class="fas fa-shopping-cart"></i><h3>E‑commerce Ads</h3><p>Catalog sales, dynamic retargeting, Shopify & WooCommerce sync.</p></div>
-        <div class="service-card"><i class="fas fa-store"></i><h3>Local Business Ads</h3><p>Geo-fencing, foot traffic campaigns & Google Maps integration.</p></div>
+        <div class="service-card"><i class="fab fa-facebook"></i><h3>Facebook Ads</h3><p>Full-funnel campaigns, advanced targeting, creative strategy & daily optimization.</p></div>
+        <div class="service-card"><i class="fab fa-whatsapp"></i><h3>WhatsApp API</h3><p>Official WhatsApp Business API, click-to-chat ads, automation & broadcast.</p></div>
+        <div class="service-card"><i class="fas fa-shopping-cart"></i><h3>E‑commerce Ads</h3><p>Catalog sales, dynamic retargeting, Shopify/WooCommerce integration & DPA.</p></div>
+        <div class="service-card"><i class="fas fa-store"></i><h3>Local Business Ads</h3><p>Geo-targeting, foot traffic campaigns, Google Maps integration & local SEO.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- Special Cards -->
+  <!-- Special Cards Highlight -->
   <div class="container" style="margin-bottom: 1rem;">
     <div class="special-services">
-      <div class="special-card"><i class="fab fa-whatsapp" style="font-size: 2.2rem; color:#25D366;"></i><div class="badge-api">Official Partner</div><h3>WhatsApp Business API</h3><p>Click-to-WhatsApp ads, automated templates, two-way messaging & analytics.</p></div>
-      <div class="special-card"><i class="fas fa-chart-line" style="font-size: 2.2rem; color:#1877f2;"></i><div class="badge-api">Conversion API</div><h3>Server-Side Tracking</h3><p>Recover 40% lost conversion data with CAPI + Pixel combo.</p></div>
+      <div class="special-card"><i class="fab fa-whatsapp" style="font-size: 2.3rem; color:#25D366;"></i><div class="badge-api">Official Partner</div><h3>WhatsApp Business API</h3><p>Click-to-WhatsApp ads, automated templates, two-way messaging & analytics dashboard.</p></div>
+      <div class="special-card"><i class="fas fa-chart-line" style="font-size: 2.3rem; color:#1877f2;"></i><div class="badge-api">Conversion API</div><h3>Server-Side Tracking</h3><p>Recover 40% lost conversion data with CAPI + Pixel combo for better ROAS.</p></div>
     </div>
   </div>
 
   <!-- Client Reviews Carousel -->
   <section class="reviews section" id="reviews">
     <div class="container">
-      <h2 class="section-title">❤️ Client Love & Success Stories</h2>
-      <div class="section-sub">Real results from real businesses we've scaled</div>
+      <h2 class="section-title">❤️ What Our Clients Say</h2>
+      <div class="section-sub">Real success stories from brands we've scaled</div>
       <div class="swiper mySwiper" style="padding: 1rem 0 2.5rem;">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-user-tie"></i></div><h4>Fashion Empire</h4><div class="review-stars">★★★★★</div><p>“AMIT GROWTH AGENCY's Facebook + WhatsApp API boosted our ROAS by 340% in 3 months. Outstanding service!”</p><span style="font-weight:600;">— Priya Mehta</span></div></div>
-          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-store"></i></div><h4>Local Coffee Chain</h4><div class="review-stars">★★★★★</div><p>“Local business ads brought 200% more foot traffic. CAPI setup was flawless and the team is highly responsive.”</p><span style="font-weight:600;">— Rajiv Nair</span></div></div>
-          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-chart-simple"></i></div><h4>D2C Beauty Brand</h4><div class="review-stars">★★★★★</div><p>“E-com catalog ads + WhatsApp abandoned cart recovery generated $1.2M extra revenue. Highly recommended!”</p><span style="font-weight:600;">— Sneha K.</span></div></div>
-          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-laptop-code"></i></div><h4>SaaS Platform</h4><div class="review-stars">★★★★★</div><p>“CAPI + lead ads reduced CPA by 52%. Highest quality leads we've ever seen.”</p><span style="font-weight:600;">— Ankit Sharma</span></div></div>
+          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-user-tie"></i></div><h4>Fashion Empire</h4><div class="review-stars">★★★★★</div><p>“AMIT GROWTH AGENCY's Facebook + WhatsApp API boosted our ROAS by 340% in just 3 months. Exceptional team!”</p><span style="font-weight:600;">— Priya Mehta</span></div></div>
+          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-store"></i></div><h4>Local Coffee Chain</h4><div class="review-stars">★★★★★</div><p>“Local business ads brought 200% more foot traffic. CAPI setup was flawless. Highly recommend!”</p><span style="font-weight:600;">— Rajiv Nair</span></div></div>
+          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-chart-simple"></i></div><h4>D2C Beauty Brand</h4><div class="review-stars">★★★★★</div><p>“E-com catalog ads + WhatsApp recovery generated $1.2M extra revenue. Best investment ever!”</p><span style="font-weight:600;">— Sneha K.</span></div></div>
+          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-laptop-code"></i></div><h4>SaaS Platform</h4><div class="review-stars">★★★★★</div><p>“CAPI + lead ads reduced CPA by 52%. Highest quality leads we've ever received.”</p><span style="font-weight:600;">— Ankit Sharma</span></div></div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -432,43 +455,47 @@
     </div>
   </section>
 
-  <!-- WhatsApp & Telegram Contact Strip with updated details -->
+  <!-- WhatsApp & Telegram Contact Strip - Number hidden, direct chat -->
   <div class="contact-strip" id="contact">
     <div class="container">
-      <h3><i class="fab fa-whatsapp"></i> Connect with AMIT GROWTH AGENCY – Instant Expert Help</h3>
+      <h3><i class="fab fa-whatsapp"></i> Connect With AMIT GROWTH AGENCY</h3>
       <div class="messenger-buttons">
-        <a href="https://wa.me/918209960124?text=Hello%20AMIT%20GROWTH%20AGENCY,%20I%20need%20Facebook%20Ads%20%26%20WhatsApp%20API%20service" target="_blank" class="btn-wa" rel="noopener"><i class="fab fa-whatsapp fa-lg"></i> WhatsApp: +91 8209960124</a>
-        <a href="https://t.me/+WlbQRBB3a4syNjFl" target="_blank" class="btn-tg" rel="noopener"><i class="fab fa-telegram fa-lg"></i> Join Telegram Channel</a>
+        <a href="https://wa.me/918209960124?text=Hello%20AMIT%20GROWTH%20AGENCY,%20I%20need%20Facebook%20Ads%20and%20WhatsApp%20API%20services" target="_blank" class="btn-wa" rel="noopener">
+          <i class="fab fa-whatsapp fa-xl"></i> Chat on WhatsApp
+        </a>
+        <a href="https://t.me/+WlbQRBB3a4syNjFl" target="_blank" class="btn-tg" rel="noopener">
+          <i class="fab fa-telegram fa-xl"></i> Join Telegram
+        </a>
       </div>
-      <p style="color:#94a3b8; margin-top: 1rem; font-size:0.8rem;">✅ Dedicated account manager • CAPI setup • Click-to-WhatsApp ads • 24/7 Support</p>
+      <p style="color:#94a3b8; margin-top: 1.2rem; font-size:0.85rem;">✅ Dedicated Account Manager • CAPI Setup • Click-to-WhatsApp Ads • 24/7 Support</p>
     </div>
   </div>
 
-  <!-- Lead Form: Fully responsive with service selection -->
+  <!-- Lead Form: Multi-step with Service Selection -->
   <section class="section" id="lead-form-section">
     <div class="container">
       <div class="form-wrapper">
-        <h3 style="font-size: clamp(1.5rem, 5vw, 1.9rem); font-weight: 800;">🚀 Get a Free Facebook & WhatsApp Audit</h3>
-        <p style="margin-bottom: 1.5rem; color:#475569; font-size: 0.9rem;">Tell us about your business — we'll prepare a custom growth roadmap</p>
+        <h3 style="font-size: clamp(1.5rem, 5vw, 1.9rem); font-weight: 800;">🚀 Get Your Free Performance Audit</h3>
+        <p style="margin-bottom: 1.5rem; color:#475569;">Tell us about your business — we'll prepare a custom growth roadmap</p>
         <form id="multiStepForm">
           <!-- STEP 1: Basic Contact Info -->
           <div class="form-step step-1" id="step1">
             <div class="form-group"><label><i class="fas fa-building"></i> Business Name *</label><input type="text" id="businessName" placeholder="Your brand / company" required></div>
             <div class="form-group"><label><i class="fas fa-user"></i> Full Name *</label><input type="text" id="fullName" placeholder="Your name" required></div>
             <div class="form-group"><label><i class="fas fa-envelope"></i> Email Address *</label><input type="email" id="email" placeholder="hello@yourbusiness.com" required></div>
-            <div class="form-group"><label><i class="fas fa-phone-alt"></i> Phone Number (WhatsApp) *</label><input type="tel" id="phone" placeholder="+91 8209960124" required></div>
+            <div class="form-group"><label><i class="fas fa-phone-alt"></i> Phone Number (WhatsApp) *</label><input type="tel" id="phone" placeholder="+91 82099 60124" required></div>
             <button type="button" class="btn-primary" id="nextStep1" style="width:100%;"><i class="fas fa-arrow-right"></i> Next: Select Services</button>
           </div>
 
-          <!-- STEP 2: Service Selection & Budget -->
+          <!-- STEP 2: Service Selection (Facebook, WhatsApp API, Ecom, Local) -->
           <div class="form-step step-2" id="step2">
-            <div class="form-group"><label><i class="fas fa-cogs"></i> Which services are you interested in? *</label>
+            <div class="form-group"><label><i class="fas fa-cogs"></i> Which services do you need? *</label>
               <div class="service-check-group" id="serviceGroup">
                 <label class="service-check"><input type="checkbox" value="Facebook Ads Management"> Facebook Ads</label>
                 <label class="service-check"><input type="checkbox" value="WhatsApp Business API"> WhatsApp API</label>
                 <label class="service-check"><input type="checkbox" value="E-commerce Ads"> E‑commerce Ads</label>
                 <label class="service-check"><input type="checkbox" value="Local Business Ads"> Local Business Ads</label>
-                <label class="service-check"><input type="checkbox" value="CAPI Setup"> CAPI / Pixel Setup</label>
+                <label class="service-check"><input type="checkbox" value="CAPI & Pixel Setup"> CAPI / Pixel Setup</label>
               </div>
             </div>
             <div class="form-group"><label><i class="fas fa-dollar-sign"></i> Monthly Ad Budget *</label>
@@ -492,7 +519,7 @@
               <div id="summaryPreview" style="margin-top: 8px; font-size: 0.85rem; line-height: 1.5;"></div>
             </div>
             <div class="form-group"><label><i class="fas fa-industry"></i> Industry / Niche</label><input type="text" id="industry" placeholder="e.g., Fashion, Restaurant, SaaS, Real Estate"></div>
-            <div class="form-group"><label><i class="fas fa-comment-dots"></i> Additional Notes (optional)</label><textarea id="message" rows="2" placeholder="Tell us anything specific..." style="border-radius: 24px;"></textarea></div>
+            <div class="form-group"><label><i class="fas fa-comment-dots"></i> Additional Notes</label><textarea id="message" rows="2" placeholder="Tell us anything specific..." style="border-radius: 24px;"></textarea></div>
             <div class="inline-flex"><button type="button" class="btn-secondary" id="prevStep2b">← Back</button><button type="submit" class="btn-primary" id="finalSubmitBtn"><i class="fab fa-whatsapp"></i> Submit & Get Audit</button></div>
           </div>
         </form>
@@ -502,15 +529,15 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© 2025 AMIT GROWTH AGENCY — Facebook & WhatsApp API Partner • CAPI • E‑commerce & Local Solutions</p>
-      <p style="margin-top: 0.6rem;"><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <i class="fab fa-whatsapp"></i> WhatsApp: +91 8209960124</p>
+      <p>© 2025 AMIT GROWTH AGENCY — Facebook Ads • WhatsApp API • E‑commerce • Local Business Solutions</p>
+      <p style="margin-top: 0.6rem;"><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <i class="fab fa-whatsapp"></i> 24/7 WhatsApp Support</p>
     </div>
   </footer>
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-  // Swiper Carousel Init
+  // Swiper Carousel
   const swiper = new Swiper('.mySwiper', {
     slidesPerView: 1, spaceBetween: 20, loop: true, autoplay: { delay: 4000, disableOnInteraction: false },
     pagination: { el: '.swiper-pagination', clickable: true },
@@ -548,9 +575,9 @@
     const name = document.getElementById('fullName').value.trim();
     const email = document.getElementById('email').value.trim();
     const phone = document.getElementById('phone').value.trim();
-    if(!business || !name || !email || !phone) return showToast('Please fill all required fields: Business, Name, Email, Phone', '#dc2626');
+    if(!business || !name || !email || !phone) return showToast('Please fill all required fields', '#dc2626');
     if(!email.includes('@')) return showToast('Valid email required', '#dc2626');
-    if(phone.length < 8) return showToast('Valid phone number required (WhatsApp)', '#dc2626');
+    if(phone.length < 8) return showToast('Valid phone number required', '#dc2626');
     showStep(2);
   });
   prev1.addEventListener('click', () => showStep(1));
@@ -583,8 +610,8 @@
   prev2.addEventListener('click', () => showStep(2));
 
   // Mock Facebook Pixel & CAPI
-  function trackFacebookPixel(eventName, params) { console.log(`[META PIXEL] ${eventName}`, params); localStorage.setItem('_fb_pixel_sim', JSON.stringify({event:eventName, time:Date.now(), data:params})); }
-  function sendConversionsAPI(eventName, user, custom) { console.log('[CAPI] Lead event → Meta server', {user, custom}); }
+  function trackFacebookPixel(eventName, params) { console.log(`[META PIXEL] ${eventName}`, params); }
+  function sendConversionsAPI(eventName, user, custom) { console.log('[CAPI] Lead event', {user, custom}); }
 
   finalSubmit.addEventListener('click', (e) => {
     e.preventDefault();
@@ -612,7 +639,7 @@
       leads.push({ id: Date.now(), businessName, fullName, email, phone, services: selectedServices, budget, objective, industry, message, timestamp: new Date().toISOString() });
       localStorage.setItem('amit_growth_leads', JSON.stringify(leads));
       
-      showToast('✅ Audit submitted! Our team will contact you within 2 hours via WhatsApp/Email. (Pixel + CAPI active)', '#0f7b3a');
+      showToast('✅ Audit submitted! Our team will contact you within 2 hours via WhatsApp/Email.', '#0f7b3a');
       document.getElementById('multiStepForm').reset();
       document.querySelectorAll('#serviceGroup input').forEach(cb => cb.checked = false);
       showStep(1);
