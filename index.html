@@ -28,7 +28,7 @@
     .container {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 0 24px;
+      padding: 0 20px;
     }
     /* Header */
     header {
@@ -48,7 +48,7 @@
       gap: 1rem;
     }
     .logo {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: 800;
       background: linear-gradient(135deg, #0f2b3d, #1877f2);
       -webkit-background-clip: text;
@@ -56,10 +56,9 @@
       color: transparent;
     }
     .logo span { color: #1877f2; background: none; }
-    .tagline { font-size: 0.7rem; display: block; color: #475569; font-weight: 500; letter-spacing: 0.5px; }
     .nav-links {
       display: flex;
-      gap: 1.5rem;
+      gap: 1.2rem;
       align-items: center;
       list-style: none;
       flex-wrap: wrap;
@@ -69,26 +68,26 @@
       font-weight: 500;
       color: #1f2a44;
       transition: 0.2s;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
     .nav-links a:hover { color: #1877f2; }
     .btn-outline {
       border: 1.5px solid #1877f2;
       background: transparent;
-      padding: 8px 20px;
+      padding: 6px 16px;
       border-radius: 40px;
       font-weight: 600;
       color: #1877f2;
       transition: 0.2s;
       cursor: pointer;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
     .btn-outline:hover { background: #1877f2; color: white; }
     .btn-primary {
       background: #1877f2;
       color: white;
       border: none;
-      padding: 12px 28px;
+      padding: 12px 24px;
       border-radius: 40px;
       font-weight: 600;
       cursor: pointer;
@@ -97,285 +96,302 @@
       align-items: center;
       gap: 8px;
       box-shadow: 0 4px 12px rgba(24,119,242,0.3);
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
     .btn-primary:hover { background: #0e5fd9; transform: translateY(-2px); }
     .btn-secondary {
       background: white;
       border: 1px solid #cbd5e1;
-      padding: 10px 24px;
+      padding: 10px 20px;
       border-radius: 40px;
       font-weight: 600;
       cursor: pointer;
       transition: 0.2s;
+      font-size: 0.9rem;
     }
-    /* Hero */
+    /* Hero - Mobile First */
     .hero {
-      padding: 4rem 0 3rem;
+      padding: 2.5rem 0 2rem;
       background: linear-gradient(135deg, #f8fcff 0%, #eef3fc 100%);
     }
     .hero-grid {
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 2rem;
+      flex-direction: column;
+      gap: 1.8rem;
     }
-    .hero-content { flex: 1.2; }
+    .hero-content { order: 1; }
+    .hero-image { order: 0; }
     .hero-badge {
       background: #e6f0ff;
       display: inline-block;
-      padding: 5px 14px;
+      padding: 4px 12px;
       border-radius: 40px;
       font-weight: 700;
       color: #1877f2;
-      margin-bottom: 1.2rem;
-      font-size: 0.8rem;
+      margin-bottom: 1rem;
+      font-size: 0.75rem;
     }
     .hero-content h1 {
-      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-size: 1.9rem;
       font-weight: 800;
-      line-height: 1.2;
+      line-height: 1.25;
       letter-spacing: -0.02em;
-      margin-bottom: 1rem;
+      margin-bottom: 0.8rem;
     }
     .hero-content p {
-      font-size: clamp(1rem, 4vw, 1.2rem);
+      font-size: 1rem;
       color: #334155;
-      margin-bottom: 1.5rem;
-      max-width: 540px;
+      margin-bottom: 1.2rem;
     }
     .hero-stats {
       display: flex;
-      gap: 1.5rem;
-      margin-top: 1.5rem;
+      gap: 1.2rem;
+      margin-top: 1.2rem;
       flex-wrap: wrap;
     }
-    .stat-item h3 { font-size: 1.6rem; font-weight: 800; color: #1877f2; }
+    .stat-item h3 { font-size: 1.3rem; font-weight: 800; color: #1877f2; }
+    .stat-item p { font-size: 0.8rem; }
+    /* Hero Image - FIXED for mobile */
     .hero-image {
-      flex: 1;
-      background: url('https://i.ibb.co/kVG0JsnH/IMG-20260406-WA0027.jpg') no-repeat center/cover;
-      border-radius: 32px;
-      min-height: 320px;
-      box-shadow: 0 25px 40px -12px rgba(0,0,0,0.2);
+      width: 100%;
+      min-height: 220px;
+      background-image: url('https://i.ibb.co/kVG0JsnH/IMG-20260406-WA0027.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border-radius: 28px;
+      box-shadow: 0 15px 30px -10px rgba(0,0,0,0.15);
+      aspect-ratio: 4 / 3;
     }
     /* Services */
-    .section { padding: 4rem 0; }
+    .section { padding: 2.5rem 0; }
     .section-title {
       text-align: center;
-      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      font-size: 1.8rem;
       font-weight: 800;
-      margin-bottom: 1rem;
+      margin-bottom: 0.8rem;
     }
     .section-sub {
       text-align: center;
       color: #475569;
       max-width: 700px;
-      margin: 0 auto 2.5rem auto;
+      margin: 0 auto 1.8rem auto;
       padding: 0 1rem;
+      font-size: 0.9rem;
     }
     .cards-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.8rem;
+      gap: 1.2rem;
       justify-content: center;
     }
     .service-card {
       background: white;
-      border-radius: 28px;
-      padding: 2rem 1.5rem;
-      flex: 1 1 250px;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+      border-radius: 24px;
+      padding: 1.5rem 1.2rem;
+      flex: 1 1 200px;
+      min-width: 160px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.04);
       border: 1px solid #eef2ff;
-      transition: 0.3s;
+      transition: 0.25s;
       text-align: center;
     }
-    .service-card i { font-size: 2.5rem; color: #1877f2; margin-bottom: 1rem; }
-    .service-card h3 { font-size: 1.4rem; margin-bottom: 0.6rem; font-weight: 700; }
-    .service-card p { color: #475569; font-size: 0.9rem; }
-    .service-card:hover { transform: translateY(-8px); border-color: #1877f2; box-shadow: 0 20px 35px rgba(24,119,242,0.1); }
+    .service-card i { font-size: 2rem; color: #1877f2; margin-bottom: 0.8rem; }
+    .service-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .service-card p { font-size: 0.8rem; color: #475569; }
+    .service-card:hover { transform: translateY(-5px); border-color: #1877f2; }
     /* Reviews */
     .reviews { background: #f8fafc; }
     .review-slide {
       background: white;
-      border-radius: 28px;
-      padding: 1.8rem;
-      margin: 1rem;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+      border-radius: 24px;
+      padding: 1.5rem;
+      margin: 0.8rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
       text-align: center;
     }
     .review-avatar {
-      width: 65px;
-      height: 65px;
+      width: 55px;
+      height: 55px;
       background: #1877f2;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 1rem;
-      font-size: 1.8rem;
+      margin: 0 auto 0.8rem;
+      font-size: 1.5rem;
       color: white;
     }
-    .review-stars { color: #f5b042; margin: 0.6rem 0; font-size: 1rem; }
+    .review-stars { color: #f5b042; margin: 0.5rem 0; font-size: 0.9rem; }
+    .review-slide p { font-size: 0.85rem; }
     .swiper-button-next, .swiper-button-prev {
       color: #1877f2;
       background: white;
-      width: 38px;
-      height: 38px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    .swiper-button-next:after, .swiper-button-prev:after { font-size: 1.2rem; }
+    .swiper-button-next:after, .swiper-button-prev:after { font-size: 1rem; }
     /* Special Cards */
     .special-services {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.8rem;
+      gap: 1.2rem;
       justify-content: center;
-      margin: 1rem 0 2rem;
+      margin: 0.5rem 0 1rem;
     }
     .special-card {
       background: linear-gradient(145deg, #ffffff, #f5f9ff);
-      border-radius: 28px;
-      padding: 1.8rem;
-      flex: 1 1 280px;
+      border-radius: 24px;
+      padding: 1.3rem;
+      flex: 1 1 260px;
       border: 1px solid #e6edf4;
       text-align: center;
-      transition: 0.2s;
     }
-    .special-card:hover { transform: translateY(-4px); border-color: #1877f2; }
     .badge-api {
       background: #25D36620;
       color: #075E54;
-      padding: 4px 12px;
+      padding: 3px 10px;
       border-radius: 40px;
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       font-weight: 600;
       display: inline-block;
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.6rem;
     }
-    /* Contact Strip - WhatsApp direct */
+    /* Contact Strip - Direct WhatsApp */
     .contact-strip {
       background: #0a1929;
-      padding: 2.5rem 0;
+      padding: 2rem 0;
       text-align: center;
     }
     .contact-strip h3 {
       color: white;
-      font-size: 1.5rem;
-      margin-bottom: 1.2rem;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      padding: 0 1rem;
     }
     .messenger-buttons {
       display: flex;
-      gap: 1.5rem;
+      gap: 1rem;
       justify-content: center;
       flex-wrap: wrap;
     }
     .btn-wa {
       background: #25D366;
       color: white;
-      padding: 14px 32px;
-      border-radius: 60px;
+      padding: 12px 24px;
+      border-radius: 50px;
       font-weight: 700;
       display: inline-flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       text-decoration: none;
       transition: 0.2s;
-      font-size: 1rem;
-      box-shadow: 0 4px 14px rgba(37,211,102,0.3);
+      font-size: 0.9rem;
     }
     .btn-tg {
       background: #0088cc;
       color: white;
-      padding: 14px 32px;
-      border-radius: 60px;
+      padding: 12px 24px;
+      border-radius: 50px;
       font-weight: 700;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       transition: 0.2s;
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
-    .btn-wa:hover, .btn-tg:hover { transform: scale(1.02); filter: brightness(1.05); }
     /* Form */
     .form-wrapper {
       max-width: 900px;
       margin: 0 auto;
       background: white;
-      border-radius: 40px;
-      padding: 2rem;
-      box-shadow: 0 25px 45px rgba(0,0,0,0.08);
+      border-radius: 32px;
+      padding: 1.5rem;
+      box-shadow: 0 20px 35px rgba(0,0,0,0.05);
       border: 1px solid #eef2ff;
     }
-    .form-group { margin-bottom: 1.3rem; }
-    label { font-weight: 600; display: block; margin-bottom: 6px; font-size: 0.9rem; }
+    .form-group { margin-bottom: 1rem; }
+    label { font-weight: 600; display: block; margin-bottom: 5px; font-size: 0.85rem; }
     input, select, textarea {
       width: 100%;
-      padding: 12px 18px;
+      padding: 10px 14px;
       border: 1.5px solid #e2e8f0;
-      border-radius: 30px;
+      border-radius: 28px;
       font-family: inherit;
-      font-size: 0.95rem;
-      transition: 0.2s;
-    }
-    input:focus, select:focus, textarea:focus {
-      outline: none;
-      border-color: #1877f2;
-      box-shadow: 0 0 0 3px rgba(24,119,242,0.1);
+      font-size: 0.9rem;
     }
     .service-check-group {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-top: 0.5rem;
+      gap: 0.6rem;
+      margin-top: 0.3rem;
     }
     .service-check {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       background: #f8fafc;
-      padding: 8px 16px;
+      padding: 5px 12px;
       border-radius: 40px;
       border: 1px solid #e2e8f0;
-      cursor: pointer;
-      font-size: 0.85rem;
-      font-weight: 500;
+      font-size: 0.8rem;
     }
-    .service-check input { width: auto; margin: 0; transform: scale(1.05); accent-color: #1877f2; }
+    .service-check input { width: auto; margin: 0; transform: scale(1); accent-color: #1877f2; }
     .step-2, .step-3 { display: none; }
-    .inline-flex { display: flex; gap: 12px; justify-content: space-between; margin-top: 1rem; flex-wrap: wrap; }
+    .inline-flex { display: flex; gap: 10px; justify-content: space-between; margin-top: 0.8rem; flex-wrap: wrap; }
     .toast-msg {
       position: fixed;
       bottom: 20px;
-      right: 20px;
       left: 20px;
-      max-width: 380px;
+      right: 20px;
+      max-width: 350px;
       margin: 0 auto;
       background: #0f172a;
       color: white;
-      padding: 12px 24px;
-      border-radius: 60px;
+      padding: 10px 18px;
+      border-radius: 50px;
       z-index: 999;
       text-align: center;
-      font-size: 0.85rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      font-size: 0.8rem;
     }
     .footer {
       background: #0f172a;
       color: #cbd5e1;
-      padding: 2rem 0;
+      padding: 1.5rem 0;
       text-align: center;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
-    @media (max-width: 768px) {
-      .navbar { flex-direction: column; text-align: center; }
-      .nav-links { justify-content: center; }
-      .hero { padding: 2rem 0; }
-      .section { padding: 2.5rem 0; }
-      .service-card { padding: 1.5rem; }
-      .btn-primary, .btn-secondary { padding: 10px 20px; font-size: 0.85rem; }
-      .btn-wa, .btn-tg { padding: 10px 22px; font-size: 0.85rem; }
+    /* Desktop Styles */
+    @media (min-width: 768px) {
+      .container { padding: 0 32px; }
+      .hero-grid {
+        flex-direction: row;
+        gap: 3rem;
+      }
+      .hero-content { order: 0; flex: 1.2; }
+      .hero-image { order: 1; flex: 1; min-height: 340px; aspect-ratio: auto; }
+      .hero-content h1 { font-size: 2.8rem; }
+      .hero-content p { font-size: 1.1rem; }
+      .section { padding: 4rem 0; }
+      .section-title { font-size: 2.3rem; }
+      .service-card { padding: 1.8rem; }
+      .form-wrapper { padding: 2rem; }
+    }
+    @media (min-width: 1024px) {
+      .hero-content h1 { font-size: 3.2rem; }
+      .hero-image { min-height: 380px; }
+    }
+    @media (max-width: 480px) {
+      .hero-image {
+        min-height: 180px;
+        border-radius: 20px;
+      }
+      .btn-primary, .btn-secondary { padding: 10px 18px; font-size: 0.85rem; }
+      .service-card { padding: 1rem; }
+      .service-card h3 { font-size: 1rem; }
     }
   </style>
 </head>
@@ -396,7 +412,7 @@
 </header>
 
 <main>
-  <!-- Hero Section -->
+  <!-- Hero Section - Mobile Optimized -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-content">
@@ -414,39 +430,39 @@
     </div>
   </section>
 
-  <!-- Services Section - Updated with required services -->
+  <!-- Services Section -->
   <section class="section" id="services">
     <div class="container">
       <h2 class="section-title">Our Premium Services 🚀</h2>
       <div class="section-sub">Specialized solutions to help you dominate your market</div>
       <div class="cards-grid">
-        <div class="service-card"><i class="fab fa-facebook"></i><h3>Facebook Ads</h3><p>Full-funnel campaigns, advanced targeting, creative strategy & daily optimization.</p></div>
-        <div class="service-card"><i class="fab fa-whatsapp"></i><h3>WhatsApp API</h3><p>Official WhatsApp Business API, click-to-chat ads, automation & broadcast.</p></div>
-        <div class="service-card"><i class="fas fa-shopping-cart"></i><h3>E‑commerce Ads</h3><p>Catalog sales, dynamic retargeting, Shopify/WooCommerce integration & DPA.</p></div>
-        <div class="service-card"><i class="fas fa-store"></i><h3>Local Business Ads</h3><p>Geo-targeting, foot traffic campaigns, Google Maps integration & local SEO.</p></div>
+        <div class="service-card"><i class="fab fa-facebook"></i><h3>Facebook Ads</h3><p>Full-funnel campaigns, advanced targeting & creative strategy</p></div>
+        <div class="service-card"><i class="fab fa-whatsapp"></i><h3>WhatsApp API</h3><p>Official Business API, click-to-chat ads & automation</p></div>
+        <div class="service-card"><i class="fas fa-shopping-cart"></i><h3>E‑commerce Ads</h3><p>Catalog sales, dynamic retargeting & DPA campaigns</p></div>
+        <div class="service-card"><i class="fas fa-store"></i><h3>Local Business Ads</h3><p>Geo-targeting, foot traffic & local SEO integration</p></div>
       </div>
     </div>
   </section>
 
-  <!-- Special Cards Highlight -->
-  <div class="container" style="margin-bottom: 1rem;">
+  <!-- Special Cards -->
+  <div class="container" style="margin-bottom: 0.5rem;">
     <div class="special-services">
-      <div class="special-card"><i class="fab fa-whatsapp" style="font-size: 2.3rem; color:#25D366;"></i><div class="badge-api">Official Partner</div><h3>WhatsApp Business API</h3><p>Click-to-WhatsApp ads, automated templates, two-way messaging & analytics dashboard.</p></div>
-      <div class="special-card"><i class="fas fa-chart-line" style="font-size: 2.3rem; color:#1877f2;"></i><div class="badge-api">Conversion API</div><h3>Server-Side Tracking</h3><p>Recover 40% lost conversion data with CAPI + Pixel combo for better ROAS.</p></div>
+      <div class="special-card"><i class="fab fa-whatsapp" style="font-size: 2rem; color:#25D366;"></i><div class="badge-api">Official Partner</div><h3 style="font-size: 1.1rem;">WhatsApp Business API</h3><p style="font-size: 0.8rem;">Click-to-WhatsApp ads, automated templates & analytics</p></div>
+      <div class="special-card"><i class="fas fa-chart-line" style="font-size: 2rem; color:#1877f2;"></i><div class="badge-api">Conversion API</div><h3 style="font-size: 1.1rem;">Server-Side Tracking</h3><p style="font-size: 0.8rem;">Recover 40% lost conversion data with CAPI + Pixel</p></div>
     </div>
   </div>
 
-  <!-- Client Reviews Carousel -->
+  <!-- Reviews Carousel -->
   <section class="reviews section" id="reviews">
     <div class="container">
       <h2 class="section-title">❤️ What Our Clients Say</h2>
       <div class="section-sub">Real success stories from brands we've scaled</div>
-      <div class="swiper mySwiper" style="padding: 1rem 0 2.5rem;">
+      <div class="swiper mySwiper" style="padding: 0.5rem 0 2rem;">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-user-tie"></i></div><h4>Fashion Empire</h4><div class="review-stars">★★★★★</div><p>“AMIT GROWTH AGENCY's Facebook + WhatsApp API boosted our ROAS by 340% in just 3 months. Exceptional team!”</p><span style="font-weight:600;">— Priya Mehta</span></div></div>
-          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-store"></i></div><h4>Local Coffee Chain</h4><div class="review-stars">★★★★★</div><p>“Local business ads brought 200% more foot traffic. CAPI setup was flawless. Highly recommend!”</p><span style="font-weight:600;">— Rajiv Nair</span></div></div>
-          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-chart-simple"></i></div><h4>D2C Beauty Brand</h4><div class="review-stars">★★★★★</div><p>“E-com catalog ads + WhatsApp recovery generated $1.2M extra revenue. Best investment ever!”</p><span style="font-weight:600;">— Sneha K.</span></div></div>
-          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-laptop-code"></i></div><h4>SaaS Platform</h4><div class="review-stars">★★★★★</div><p>“CAPI + lead ads reduced CPA by 52%. Highest quality leads we've ever received.”</p><span style="font-weight:600;">— Ankit Sharma</span></div></div>
+          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-user-tie"></i></div><h4>Fashion Empire</h4><div class="review-stars">★★★★★</div><p>“AMIT GROWTH AGENCY boosted our ROAS by 340% in 3 months. Exceptional!”</p><span style="font-weight:600;">— Priya Mehta</span></div></div>
+          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-store"></i></div><h4>Local Coffee Chain</h4><div class="review-stars">★★★★★</div><p>“Local business ads brought 200% more foot traffic. CAPI setup flawless.”</p><span style="font-weight:600;">— Rajiv Nair</span></div></div>
+          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-chart-simple"></i></div><h4>D2C Beauty Brand</h4><div class="review-stars">★★★★★</div><p>“E-com catalog ads + WhatsApp recovery generated $1.2M extra revenue.”</p><span style="font-weight:600;">— Sneha K.</span></div></div>
+          <div class="swiper-slide"><div class="review-slide"><div class="review-avatar"><i class="fas fa-laptop-code"></i></div><h4>SaaS Platform</h4><div class="review-stars">★★★★★</div><p>“CAPI + lead ads reduced CPA by 52%. Highest quality leads.”</p><span style="font-weight:600;">— Ankit Sharma</span></div></div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -455,30 +471,29 @@
     </div>
   </section>
 
-  <!-- WhatsApp & Telegram Contact Strip - Number hidden, direct chat -->
+  <!-- WhatsApp & Telegram - Direct chat, number hidden -->
   <div class="contact-strip" id="contact">
     <div class="container">
       <h3><i class="fab fa-whatsapp"></i> Connect With AMIT GROWTH AGENCY</h3>
       <div class="messenger-buttons">
         <a href="https://wa.me/918209960124?text=Hello%20AMIT%20GROWTH%20AGENCY,%20I%20need%20Facebook%20Ads%20and%20WhatsApp%20API%20services" target="_blank" class="btn-wa" rel="noopener">
-          <i class="fab fa-whatsapp fa-xl"></i> Chat on WhatsApp
+          <i class="fab fa-whatsapp fa-lg"></i> Chat on WhatsApp
         </a>
         <a href="https://t.me/+WlbQRBB3a4syNjFl" target="_blank" class="btn-tg" rel="noopener">
-          <i class="fab fa-telegram fa-xl"></i> Join Telegram
+          <i class="fab fa-telegram fa-lg"></i> Join Telegram
         </a>
       </div>
-      <p style="color:#94a3b8; margin-top: 1.2rem; font-size:0.85rem;">✅ Dedicated Account Manager • CAPI Setup • Click-to-WhatsApp Ads • 24/7 Support</p>
+      <p style="color:#94a3b8; margin-top: 1rem; font-size:0.75rem;">✅ Dedicated Manager • CAPI Setup • Click-to-WhatsApp Ads • 24/7 Support</p>
     </div>
   </div>
 
-  <!-- Lead Form: Multi-step with Service Selection -->
+  <!-- Lead Form -->
   <section class="section" id="lead-form-section">
     <div class="container">
       <div class="form-wrapper">
-        <h3 style="font-size: clamp(1.5rem, 5vw, 1.9rem); font-weight: 800;">🚀 Get Your Free Performance Audit</h3>
-        <p style="margin-bottom: 1.5rem; color:#475569;">Tell us about your business — we'll prepare a custom growth roadmap</p>
+        <h3 style="font-size: 1.5rem; font-weight: 800;">🚀 Get Your Free Performance Audit</h3>
+        <p style="margin-bottom: 1.2rem; color:#475569; font-size: 0.85rem;">Tell us about your business — we'll prepare a custom growth roadmap</p>
         <form id="multiStepForm">
-          <!-- STEP 1: Basic Contact Info -->
           <div class="form-step step-1" id="step1">
             <div class="form-group"><label><i class="fas fa-building"></i> Business Name *</label><input type="text" id="businessName" placeholder="Your brand / company" required></div>
             <div class="form-group"><label><i class="fas fa-user"></i> Full Name *</label><input type="text" id="fullName" placeholder="Your name" required></div>
@@ -486,8 +501,6 @@
             <div class="form-group"><label><i class="fas fa-phone-alt"></i> Phone Number (WhatsApp) *</label><input type="tel" id="phone" placeholder="+91 82099 60124" required></div>
             <button type="button" class="btn-primary" id="nextStep1" style="width:100%;"><i class="fas fa-arrow-right"></i> Next: Select Services</button>
           </div>
-
-          <!-- STEP 2: Service Selection (Facebook, WhatsApp API, Ecom, Local) -->
           <div class="form-step step-2" id="step2">
             <div class="form-group"><label><i class="fas fa-cogs"></i> Which services do you need? *</label>
               <div class="service-check-group" id="serviceGroup">
@@ -511,14 +524,12 @@
             </div>
             <div class="inline-flex"><button type="button" class="btn-secondary" id="prevStep1">← Back</button><button type="button" class="btn-primary" id="nextStep2">Continue →</button></div>
           </div>
-
-          <!-- STEP 3: Industry & Summary -->
           <div class="form-step step-3" id="step3">
-            <div style="background:#f0f6ff; border-radius: 28px; padding: 1rem; margin-bottom: 1rem;">
+            <div style="background:#f0f6ff; border-radius: 24px; padding: 0.8rem; margin-bottom: 1rem;">
               <strong>📋 Review your request</strong>
-              <div id="summaryPreview" style="margin-top: 8px; font-size: 0.85rem; line-height: 1.5;"></div>
+              <div id="summaryPreview" style="margin-top: 6px; font-size: 0.8rem; line-height: 1.4;"></div>
             </div>
-            <div class="form-group"><label><i class="fas fa-industry"></i> Industry / Niche</label><input type="text" id="industry" placeholder="e.g., Fashion, Restaurant, SaaS, Real Estate"></div>
+            <div class="form-group"><label><i class="fas fa-industry"></i> Industry / Niche</label><input type="text" id="industry" placeholder="e.g., Fashion, Restaurant, SaaS"></div>
             <div class="form-group"><label><i class="fas fa-comment-dots"></i> Additional Notes</label><textarea id="message" rows="2" placeholder="Tell us anything specific..." style="border-radius: 24px;"></textarea></div>
             <div class="inline-flex"><button type="button" class="btn-secondary" id="prevStep2b">← Back</button><button type="submit" class="btn-primary" id="finalSubmitBtn"><i class="fab fa-whatsapp"></i> Submit & Get Audit</button></div>
           </div>
@@ -529,8 +540,8 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© 2025 AMIT GROWTH AGENCY — Facebook Ads • WhatsApp API • E‑commerce • Local Business Solutions</p>
-      <p style="margin-top: 0.6rem;"><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <i class="fab fa-whatsapp"></i> 24/7 WhatsApp Support</p>
+      <p>© 2025 AMIT GROWTH AGENCY — Facebook Ads • WhatsApp API • E‑commerce • Local Business</p>
+      <p style="margin-top: 0.4rem;"><a href="#">Privacy Policy</a> | <a href="#">Terms</a> | <i class="fab fa-whatsapp"></i> 24/7 Support</p>
     </div>
   </footer>
 </main>
@@ -539,13 +550,13 @@
 <script>
   // Swiper Carousel
   const swiper = new Swiper('.mySwiper', {
-    slidesPerView: 1, spaceBetween: 20, loop: true, autoplay: { delay: 4000, disableOnInteraction: false },
+    slidesPerView: 1, spaceBetween: 15, loop: true, autoplay: { delay: 4000, disableOnInteraction: false },
     pagination: { el: '.swiper-pagination', clickable: true },
     navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-    breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 2 } }
+    breakpoints: { 640: { slidesPerView: 2 } }
   });
 
-  // Multi-step Form Logic
+  // Multi-step Form
   const step1Div = document.getElementById('step1');
   const step2Div = document.getElementById('step2');
   const step3Div = document.getElementById('step3');
@@ -562,7 +573,6 @@
     if(step === 2) step2Div.style.display = 'block';
     if(step === 3) step3Div.style.display = 'block';
   }
-
   function escapeHtml(str) { if(!str) return ''; return str.replace(/[&<>]/g, m => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;' }[m])); }
   function showToast(msg, bg='#1e293b') { 
     const t = document.querySelector('.toast-msg'); if(t) t.remove(); 
@@ -583,35 +593,23 @@
   prev1.addEventListener('click', () => showStep(1));
 
   next2.addEventListener('click', () => {
-    const checkboxes = document.querySelectorAll('#serviceGroup input[type="checkbox"]');
+    const checkboxes = document.querySelectorAll('#serviceGroup input');
     const selected = Array.from(checkboxes).some(cb => cb.checked);
     const budget = document.getElementById('budgetSelect').value;
     if(!selected) return showToast('Please select at least one service', '#dc2626');
     if(!budget) return showToast('Please select your monthly budget', '#dc2626');
-    
     const business = document.getElementById('businessName').value;
     const name = document.getElementById('fullName').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
     const selectedServices = Array.from(checkboxes).filter(cb => cb.checked).map(cb => cb.value).join(', ');
-    const budgetVal = document.getElementById('budgetSelect').value;
-    const objective = document.getElementById('objective').value;
-    summaryPreview.innerHTML = `
-      <strong>Business:</strong> ${escapeHtml(business)}<br>
-      <strong>Name:</strong> ${escapeHtml(name)}<br>
-      <strong>Email:</strong> ${escapeHtml(email)}<br>
-      <strong>WhatsApp:</strong> ${escapeHtml(phone)}<br>
-      <strong>Services:</strong> ${escapeHtml(selectedServices)}<br>
-      <strong>Budget:</strong> ${budgetVal}<br>
-      <strong>Goal:</strong> ${objective}
-    `;
+    summaryPreview.innerHTML = `<strong>Business:</strong> ${escapeHtml(business)}<br><strong>Name:</strong> ${escapeHtml(name)}<br><strong>Email:</strong> ${escapeHtml(email)}<br><strong>WhatsApp:</strong> ${escapeHtml(phone)}<br><strong>Services:</strong> ${escapeHtml(selectedServices)}<br><strong>Budget:</strong> ${budget}<br><strong>Goal:</strong> ${document.getElementById('objective').value}`;
     showStep(3);
   });
   prev2.addEventListener('click', () => showStep(2));
 
-  // Mock Facebook Pixel & CAPI
   function trackFacebookPixel(eventName, params) { console.log(`[META PIXEL] ${eventName}`, params); }
-  function sendConversionsAPI(eventName, user, custom) { console.log('[CAPI] Lead event', {user, custom}); }
+  function sendConversionsAPI(eventName, user, custom) { console.log('[CAPI] Lead', {user, custom}); }
 
   finalSubmit.addEventListener('click', (e) => {
     e.preventDefault();
@@ -619,32 +617,22 @@
     const fullName = document.getElementById('fullName').value.trim();
     const email = document.getElementById('email').value.trim();
     const phone = document.getElementById('phone').value.trim();
-    const checkboxes = document.querySelectorAll('#serviceGroup input[type="checkbox"]');
+    const checkboxes = document.querySelectorAll('#serviceGroup input');
     const selectedServices = Array.from(checkboxes).filter(cb => cb.checked).map(cb => cb.value);
-    const budget = document.getElementById('budgetSelect').value;
-    const objective = document.getElementById('objective').value;
-    const industry = document.getElementById('industry').value.trim() || 'Not specified';
-    const message = document.getElementById('message').value.trim();
-
-    if(!businessName || !fullName || !email || !phone) { showToast('Missing required info', '#dc2626'); showStep(1); return; }
-    if(selectedServices.length === 0) { showToast('Please select at least one service', '#dc2626'); showStep(2); return; }
-
-    finalSubmit.disabled = true;
-    finalSubmit.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Submitting...';
-
+    if(!businessName || !fullName || !email || !phone) { showToast('Missing info', '#dc2626'); showStep(1); return; }
+    if(selectedServices.length === 0) { showToast('Select a service', '#dc2626'); showStep(2); return; }
+    finalSubmit.disabled = true; finalSubmit.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Submitting...';
     setTimeout(() => {
       trackFacebookPixel('Lead', { business: businessName, services: selectedServices });
-      sendConversionsAPI('Lead', { email, phone, businessName, fullName }, { budget, objective, industry, services: selectedServices });
-      const leads = JSON.parse(localStorage.getItem('amit_growth_leads') || '[]');
-      leads.push({ id: Date.now(), businessName, fullName, email, phone, services: selectedServices, budget, objective, industry, message, timestamp: new Date().toISOString() });
+      sendConversionsAPI('Lead', { email, phone }, { services: selectedServices });
+      let leads = JSON.parse(localStorage.getItem('amit_growth_leads') || '[]');
+      leads.push({ id: Date.now(), businessName, fullName, email, phone, services: selectedServices, timestamp: new Date().toISOString() });
       localStorage.setItem('amit_growth_leads', JSON.stringify(leads));
-      
-      showToast('✅ Audit submitted! Our team will contact you within 2 hours via WhatsApp/Email.', '#0f7b3a');
+      showToast('✅ Audit submitted! We will contact you within 2 hours.', '#0f7b3a');
       document.getElementById('multiStepForm').reset();
       document.querySelectorAll('#serviceGroup input').forEach(cb => cb.checked = false);
       showStep(1);
-      finalSubmit.disabled = false;
-      finalSubmit.innerHTML = '<i class="fab fa-whatsapp"></i> Submit & Get Audit';
+      finalSubmit.disabled = false; finalSubmit.innerHTML = '<i class="fab fa-whatsapp"></i> Submit & Get Audit';
     }, 800);
   });
 
